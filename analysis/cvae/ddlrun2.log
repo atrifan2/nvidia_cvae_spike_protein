@@ -1,0 +1,800 @@
++ export LSB_MCPU_HOSTS='batch2 1 a35n18 42' ; export PYTHONPATH='/sw/summit/xalt/1.2.0/site:/sw/summit/xalt/1.2.0/libexec' ; export LSB_JOBID='81902' ; export PATH='/sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/bin:/sw/sources/lsf-tools/2.0/summit/bin:/sw/summit/xalt/1.2.0/bin:/sw/summit/cuda/10.1.243/bin:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/xl-16.1.1-5/spectrum-mpi-10.3.1.2-20200121-p6nrnt6vtvkn356wqg6f74n6jspnpjd2/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:/usr/bin:/usr/sbin:/opt/ibm/csm/bin:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/tmux-2.2-z2cgytxdo3rzw643uj2fiwp7iwqbbbwp/bin:/sw/summit/python/3.6/anaconda3/5.3.0/condabin:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/bin:/sw/sources/hpss/bin:/sw/summit/xl/16.1.1-5/xlC/16.1.1/bin:/sw/summit/xl/16.1.1-5/xlf/16.1.1/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:/usr/local/bin:/usr/local/sbin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/puppetlabs/bin:/usr/lpp/mmfs/bin' ; export LD_LIBRARY_PATH='/sw/summit/cuda/10.1.243/lib64:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/xl-16.1.1-5/spectrum-mpi-10.3.1.2-20200121-p6nrnt6vtvkn356wqg6f74n6jspnpjd2/lib:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/lib:/sw/summit/xl/16.1.1-5/xlsmp/5.1.1/lib:/sw/summit/xl/16.1.1-5/xlmass/9.1.1/lib:/sw/summit/xl/16.1.1-5/xlC/16.1.1/lib:/sw/summit/xl/16.1.1-5/xlf/16.1.1/lib:/sw/summit/xl/16.1.1-5/lib:/opt/ibm/spectrum_mpi/jsm_pmix/lib:/sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core:/sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/extras/CUPTI/lib64::/sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/cuda/lib:' ; export DDL_HOST_PORT='2200' ; export DDL_HOST_LIST='' ; export DDL_OPTIONS='-mode p:6x1x1x1 ' ; /sw/summit/xalt/1.2.0/bin/jsrun --erf_input /tmp/DDLRUN/DDLRUN.WEBIYl37l4Gp/RANKFILE bash -c 'source /sw/summit/ibm-wml-ce/anaconda-base/etc/profile.d/conda.sh && conda activate /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2 > /dev/null 2>&1 && python cvae/train_cvae.py -f bytes-train.tfrecords'
+2020-05-07 12:02:38.432672: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:38.432689: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:38.432650: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:38.432766: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:38.432766: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:38.432766: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:39.466753: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.7
+2020-05-07 12:02:39.466753: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.7
+2020-05-07 12:02:39.466772: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.7
+2020-05-07 12:02:39.466753: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.7
+2020-05-07 12:02:39.466772: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.7
+2020-05-07 12:02:39.466772: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.7
+2020-05-07 12:02:39.467991: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.7
+2020-05-07 12:02:39.468029: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.7
+2020-05-07 12:02:39.468189: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.7
+2020-05-07 12:02:39.468227: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.7
+2020-05-07 12:02:39.468227: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.7
+2020-05-07 12:02:39.468227: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.7
+2020-05-07 12:02:41.875734: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-05-07 12:02:41.875734: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-05-07 12:02:41.875734: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-05-07 12:02:41.876008: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-05-07 12:02:41.876035: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-05-07 12:02:41.876009: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-05-07 12:02:42.793814: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.794312: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.794606: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.794801: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.795121: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.795264: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.810131: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.810610: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.810759: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.810921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.811075: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.811385: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.826665: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.826967: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.827114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.827285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.827437: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.827583: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.842972: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.843117: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.843268: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.843420: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.843569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.843713: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.859055: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.859200: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.859354: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.859556: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.859699: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.859841: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.875171: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.875199: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:42.875254: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:42.875316: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.875339: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:42.875393: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:42.875468: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.875493: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:42.875549: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:42.875661: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.875693: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:42.875760: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:42.875805: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.875828: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:42.875880: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:42.875990: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:42.876020: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:42.876075: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:42.877345: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:42.877345: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:42.877345: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:42.877345: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:42.877345: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:42.877345: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:42.877937: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:42.878031: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:42.878041: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:42.878130: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:42.878129: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:42.878187: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:42.879790: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:42.879790: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:42.879790: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:42.879965: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:42.879964: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:42.880133: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:42.881260: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:42.881302: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:42.881267: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:42.881275: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:42.881316: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:42.881308: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:42.881433: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:42.881475: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:42.881433: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:42.881475: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:42.881833: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:42.881885: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:43.072817: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2020-05-07 12:02:43.073114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2020-05-07 12:02:43.073504: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2020-05-07 12:02:43.073654: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2020-05-07 12:02:43.073800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2020-05-07 12:02:43.074208: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2020-05-07 12:02:43.086929: I tensorflow/core/platform/profile_utils/cpu_utils.cc:101] CPU Frequency: 3450000000 Hz
+2020-05-07 12:02:43.086929: I tensorflow/core/platform/profile_utils/cpu_utils.cc:101] CPU Frequency: 3450000000 Hz
+2020-05-07 12:02:43.087006: I tensorflow/core/platform/profile_utils/cpu_utils.cc:101] CPU Frequency: 3450000000 Hz
+2020-05-07 12:02:43.087144: I tensorflow/core/platform/profile_utils/cpu_utils.cc:101] CPU Frequency: 3450000000 Hz
+2020-05-07 12:02:43.087144: I tensorflow/core/platform/profile_utils/cpu_utils.cc:101] CPU Frequency: 3450000000 Hz
+2020-05-07 12:02:43.087177: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x12a847ad0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.087198: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-05-07 12:02:43.087244: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x144ed76a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.087263: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-05-07 12:02:43.087206: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x11e007c40 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.087225: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-05-07 12:02:43.087461: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1162e7ce0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.087483: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-05-07 12:02:43.087432: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x145c47180 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.087463: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-05-07 12:02:43.089129: I tensorflow/core/platform/profile_utils/cpu_utils.cc:101] CPU Frequency: 3450000000 Hz
+2020-05-07 12:02:43.089377: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x146aa80d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.089399: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-05-07 12:02:43.692079: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x12a863f70 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.692122: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2020-05-07 12:02:43.702589: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x11e0240e0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.702616: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2020-05-07 12:02:43.704735: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x144ef3b40 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.704756: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2020-05-07 12:02:43.704941: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x145c63620 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.704971: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2020-05-07 12:02:43.708024: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x116304180 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.708047: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2020-05-07 12:02:43.709250: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x146ac4570 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-05-07 12:02:43.709269: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2020-05-07 12:02:43.709851: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:43.709895: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:43.709916: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:43.709969: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:43.709995: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:43.710021: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:43.710045: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:43.710061: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:43.720948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:43.720990: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:43.721017: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:43.721073: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:43.721108: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:43.721142: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:43.721176: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:43.721209: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:43.722862: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:43.722895: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:43.722914: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:43.722956: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:43.722982: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:43.723007: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:43.723032: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:43.723048: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:43.723463: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:43.723506: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:43.723527: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:43.723580: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:43.723605: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:43.723630: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:43.723655: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:43.723670: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:43.726181: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:43.726215: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:43.726236: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:43.726280: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:43.726308: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:43.726335: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:43.726362: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:43.726379: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:43.727424: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1558] Found device 0 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-05-07 12:02:43.727455: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:43.727481: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-07 12:02:43.727523: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-07 12:02:43.727550: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-07 12:02:43.727578: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-07 12:02:43.727605: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-07 12:02:43.727622: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-07 12:02:43.741794: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 4
+2020-05-07 12:02:43.741851: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:43.753352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 5
+2020-05-07 12:02:43.753387: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:43.754906: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 3
+2020-05-07 12:02:43.754940: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:43.755716: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 2
+2020-05-07 12:02:43.755760: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:43.758691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 0
+2020-05-07 12:02:43.758727: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:43.761985: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1700] Adding visible gpu devices: 1
+2020-05-07 12:02:43.762036: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+2020-05-07 12:02:44.689205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1099] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-07 12:02:44.689258: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105]      3 
+2020-05-07 12:02:44.689269: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1118] 3:   N 
+2020-05-07 12:02:44.689914: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1099] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-07 12:02:44.689948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105]      2 
+2020-05-07 12:02:44.689959: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1118] 2:   N 
+2020-05-07 12:02:44.701204: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1099] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-07 12:02:44.701233: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105]      0 
+2020-05-07 12:02:44.701243: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1118] 0:   N 
+2020-05-07 12:02:44.703044: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1244] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14731 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2020-05-07 12:02:44.704327: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1244] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14731 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0004:06:00.0, compute capability: 7.0)
+2020-05-07 12:02:44.717898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1244] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14731 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2020-05-07 12:02:44.730945: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1099] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-07 12:02:44.730980: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105]      4 
+2020-05-07 12:02:44.730990: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1118] 4:   N 
+2020-05-07 12:02:44.751626: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1244] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14731 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2020-05-07 12:02:44.756263: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1099] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-07 12:02:44.756287: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105]      5 
+2020-05-07 12:02:44.756296: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1118] 5:   N 
+2020-05-07 12:02:44.767483: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1244] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14731 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0035:05:00.0, compute capability: 7.0)
+2020-05-07 12:02:44.795968: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1099] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-07 12:02:44.796007: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105]      1 
+2020-05-07 12:02:44.796018: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1118] 1:   N 
+2020-05-07 12:02:44.802483: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1244] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14731 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2020-05-07 12:02:54.829085: W tensorflow/core/common_runtime/bfc_allocator.cc:801] Allocator (GPU_0_bfc) ran out of memory trying to allocate 108.32GiB (rounded to 116308574208).  Current allocation summary follows.
+2020-05-07 12:02:54.829144: I tensorflow/core/common_runtime/bfc_allocator.cc:1288] BFCAllocator dump for GPU_0_bfc
+2020-05-07 12:02:54.829160: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (256): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829171: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (512): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829182: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1024): 	Total Chunks: 1, Chunks in use: 1. 1.2KiB allocated for chunks. 1.2KiB in use in bin. 1.0KiB client-requested in use in bin.
+2020-05-07 12:02:54.829192: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2048): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829202: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4096): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829212: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8192): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829222: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16384): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829232: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (32768): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829243: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (65536): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829253: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (131072): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829263: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (262144): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829274: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (524288): 	Total Chunks: 1, Chunks in use: 0. 1022.8KiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829284: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1048576): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829294: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2097152): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829304: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4194304): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829314: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8388608): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829323: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829332: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (33554432): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829342: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (67108864): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829352: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829361: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (268435456): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.829374: I tensorflow/core/common_runtime/bfc_allocator.cc:1311] Bin for 108.32GiB was 256.00MiB, Chunk State: 
+2020-05-07 12:02:54.829382: I tensorflow/core/common_runtime/bfc_allocator.cc:1324] Next region of size 1048576
+2020-05-07 12:02:54.829401: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] InUse  at 2001dd400000 of size 1280 next 1
+2020-05-07 12:02:54.829411: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] Free   at 2001dd400500 of size 1047296 next 18446744073709551615
+2020-05-07 12:02:54.829419: I tensorflow/core/common_runtime/bfc_allocator.cc:1349]      Summary of in-use Chunks by size: 
+2020-05-07 12:02:54.829432: I tensorflow/core/common_runtime/bfc_allocator.cc:1352] 1 Chunks of size 1280 totalling 1.2KiB
+2020-05-07 12:02:54.829441: I tensorflow/core/common_runtime/bfc_allocator.cc:1356] Sum Total of in-use chunks: 1.2KiB
+2020-05-07 12:02:54.829450: I tensorflow/core/common_runtime/bfc_allocator.cc:1358] total_region_allocated_bytes_: 1048576 memory_limit_: 15447192372 available bytes: 15446143796 curr_region_allocation_bytes_: 2097152
+2020-05-07 12:02:54.829470: I tensorflow/core/common_runtime/bfc_allocator.cc:1364] Stats: 
+Limit:                       15447192372
+InUse:                              1280
+MaxInUse:                         742400
+NumAllocs:                            59
+MaxAllocSize:                     147456
+BytesInactive:                         0
+BytesActive:                        1280
+PeakBytesActive:                  296948
+BytesReclaimed:                   445708
+NumSingleReclaims:                     0
+NumFullReclaims:                       1
+NumDefrags:                            0
+BytesDefragged:                        0
+
+2020-05-07 12:02:54.829481: W tensorflow/core/common_runtime/bfc_allocator.cc:806] *___________________________________________________________________________________________________
+[a35n18:60178] *** Process received signal ***
+[a35n18:60178] Signal: Segmentation fault (11)
+[a35n18:60178] Signal code:  (3)
+[a35n18:60178] Failing at address: 0x7ffff0157687c20
+[a35n18:60178] [ 0] [0x2000000504d8]
+[a35n18:60178] [ 1] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow12BFCAllocator11OccupyChunkEPNS_17IntrusiveListHookINS_15LMSTensorBufferEEE+0x70)[0x200077677460]
+[a35n18:60178] [ 2] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(+0xefb5b0)[0x20007735b5b0]
+[a35n18:60178] [ 3] 2020-05-07 12:02:54.831400: W tensorflow/core/common_runtime/bfc_allocator.cc:801] Allocator (GPU_0_bfc) ran out of memory trying to allocate 108.32GiB (rounded to 116308574208).  Current allocation summary follows.
+2020-05-07 12:02:54.831457: I tensorflow/core/common_runtime/bfc_allocator.cc:1288] BFCAllocator dump for GPU_0_bfc
+2020-05-07 12:02:54.831472: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (256): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831481: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (512): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831493: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1024): 	Total Chunks: 1, Chunks in use: 1. 1.2KiB allocated for chunks. 1.2KiB in use in bin. 1.0KiB client-requested in use in bin.
+2020-05-07 12:02:54.831503: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2048): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831512: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4096): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831521: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8192): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831530: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16384): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831539: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (32768): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831547: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (65536): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831556: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (131072): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831565: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (262144): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831575: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (524288): 	Total Chunks: 1, Chunks in use: 0. 1022.8KiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831584: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1048576): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831593: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2097152): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831603: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4194304): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831611: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8388608): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831620: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831629: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (33554432): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831637: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (67108864): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831647: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831656: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (268435456): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.831667: I tensorflow/core/common_runtime/bfc_allocator.cc:1311] Bin for 108.32GiB was 256.00MiB, Chunk State: 
+2020-05-07 12:02:54.831674: I tensorflow/core/common_runtime/bfc_allocator.cc:1324] Next region of size 1048576
+2020-05-07 12:02:54.831696: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] InUse  at 2001bf200000 of size 1280 next 1
+2020-05-07 12:02:54.831704: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] Free   at 2001bf200500 of size 1047296 next 18446744073709551615
+2020-05-07 12:02:54.831712: I tensorflow/core/common_runtime/bfc_allocator.cc:1349]      Summary of in-use Chunks by size: 
+2020-05-07 12:02:54.831722: I tensorflow/core/common_runtime/bfc_allocator.cc:1352] 1 Chunks of size 1280 totalling 1.2KiB
+2020-05-07 12:02:54.831730: I tensorflow/core/common_runtime/bfc_allocator.cc:1356] Sum Total of in-use chunks: 1.2KiB
+2020-05-07 12:02:54.831737: I tensorflow/core/common_runtime/bfc_allocator.cc:1358] total_region_allocated_bytes_: 1048576 memory_limit_: 15447192372 available bytes: 15446143796 curr_region_allocation_bytes_: 2097152
+2020-05-07 12:02:54.831754: I tensorflow/core/common_runtime/bfc_allocator.cc:1364] Stats: 
+Limit:                       15447192372
+InUse:                              1280
+MaxInUse:                         742400
+NumAllocs:                            59
+MaxAllocSize:                     147456
+BytesInactive:                         0
+BytesActive:                        1280
+PeakBytesActive:                  296948
+BytesReclaimed:                   445708
+NumSingleReclaims:                     0
+NumFullReclaims:                       1
+NumDefrags:                            0
+BytesDefragged:                        0
+
+2020-05-07 12:02:54.831764: W tensorflow/core/common_runtime/bfc_allocator.cc:806] *___________________________________________________________________________________________________
+[a35n18:60182] *** Process received signal ***
+[a35n18:60182] Signal: Segmentation fault (11)
+[a35n18:60182] Signal code:  (3)
+[a35n18:60182] Failing at address: 0x7ffff015738d7c0
+[a35n18:60182] [ 0] [0x2000000504d8]
+[a35n18:60182] [ 1] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow6TensorC2EPNS_9AllocatorENS_8DataTypeERKNS_11TensorShapeERKNS_20AllocationAttributesE+0xdc4)[0x200077375154]
+[a35n18:60178] [ 4] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow12BFCAllocator11OccupyChunkEPNS_17IntrusiveListHookINS_15LMSTensorBufferEEE+0x70)[0x200077677460]
+[a35n18:60182] [ 2] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_tensorENS_8DataTypeERKNS_11TensorShapeEPNS_6TensorENS_19AllocatorAttributesERKNS_20AllocationAttributesE+0xac)[0x2000773199ac]
+[a35n18:60178] [ 5] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(+0xefb5b0)[0x20007735b5b0]
+[a35n18:60182] [ 3] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorENS_19AllocatorAttributesE+0xa98)[0x20007731a998]
+[a35n18:60178] [ 6] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow6TensorC2EPNS_9AllocatorENS_8DataTypeERKNS_11TensorShapeERKNS_20AllocationAttributesE+0xdc4)[0x200077375154]
+[a35n18:60182] [ 4] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorE+0xa0)[0x20007731ab70]
+[a35n18:60178] [ 7] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_tensorENS_8DataTypeERKNS_11TensorShapeEPNS_6TensorENS_19AllocatorAttributesERKNS_20AllocationAttributesE+0xac)[0x2000773199ac]
+[a35n18:60182] [ 5] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorENS_19AllocatorAttributesE+0xa98)[0x20007731a998]
+[a35n18:60182] [ 6] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2d828c)[0x20004df9828c]
+[a35n18:60178] [ 8] 2020-05-07 12:02:54.835765: W tensorflow/core/common_runtime/bfc_allocator.cc:801] Allocator (GPU_0_bfc) ran out of memory trying to allocate 108.32GiB (rounded to 116308574208).  Current allocation summary follows.
+2020-05-07 12:02:54.835822: I tensorflow/core/common_runtime/bfc_allocator.cc:1288] BFCAllocator dump for GPU_0_bfc
+2020-05-07 12:02:54.835843: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (256): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.835859: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (512): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+/sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorE+0xa0)[0x20007731ab70]
+[a35n18:60182] [ 7] 2020-05-07 12:02:54.835876: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1024): 	Total Chunks: 1, Chunks in use: 1. 1.2KiB allocated for chunks. 1.2KiB in use in bin. 1.0KiB client-requested in use in bin.
+2020-05-07 12:02:54.835892: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2048): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.835906: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4096): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.835922: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8192): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.835936: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16384): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.835952: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (32768): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.835964: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (65536): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.835974: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (131072): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.835984: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (262144): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.835995: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (524288): 	Total Chunks: 1, Chunks in use: 0. 1022.8KiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.836004: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1048576): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.836013: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2097152): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.836023: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4194304): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.836032: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8388608): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.836041: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.836050: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (33554432): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.836058: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (67108864): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.836066: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.836075: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (268435456): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.836084: I tensorflow/core/common_runtime/bfc_allocator.cc:1311] Bin for 108.32GiB was 256.00MiB, Chunk State: 
+2020-05-07 12:02:54.836091: I tensorflow/core/common_runtime/bfc_allocator.cc:1324] Next region of size 1048576
+2020-05-07 12:02:54.836108: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] InUse  at 200196200000 of size 1280 next 1
+2020-05-07 12:02:54.836116: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] Free   at 200196200500 of size 1047296 next 18446744073709551615
+2020-05-07 12:02:54.836123: I tensorflow/core/common_runtime/bfc_allocator.cc:1349]      Summary of in-use Chunks by size: 
+2020-05-07 12:02:54.836132: I tensorflow/core/common_runtime/bfc_allocator.cc:1352] 1 Chunks of size 1280 totalling 1.2KiB
+2020-05-07 12:02:54.836140: I tensorflow/core/common_runtime/bfc_allocator.cc:1356] Sum Total of in-use chunks: 1.2KiB
+2020-05-07 12:02:54.836147: I tensorflow/core/common_runtime/bfc_allocator.cc:1358] total_region_allocated_bytes_: 1048576 memory_limit_: 15447192372 available bytes: 15446143796 curr_region_allocation_bytes_: 2097152
+2020-05-07 12:02:54.836163: I tensorflow/core/common_runtime/bfc_allocator.cc:1364] Stats: 
+Limit:                       15447192372
+InUse:                              1280
+MaxInUse:                         742400
+NumAllocs:                            59
+MaxAllocSize:                     147456
+BytesInactive:                         0
+BytesActive:                        1280
+PeakBytesActive:                  296948
+BytesReclaimed:                   445708
+NumSingleReclaims:                     0
+NumFullReclaims:                       1
+NumDefrags:                            0
+BytesDefragged:                        0
+
+2020-05-07 12:02:54.836172: W tensorflow/core/common_runtime/bfc_allocator.cc:806] *___________________________________________________________________________________________________
+[a35n18:60180] *** Process received signal ***
+[a35n18:60180] Signal: Segmentation fault (11)
+[a35n18:60180] Signal code:  (3)
+[a35n18:60180] Failing at address: 0x7ffff0129fdf860
+[a35n18:60180] [ 0] [0x2000000504d8]
+[a35n18:60180] [ 1] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow12BFCAllocator11OccupyChunkEPNS_17IntrusiveListHookINS_15LMSTensorBufferEEE+0x70)[0x200077677460]
+[a35n18:60180] [ 2] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2df178)[0x20004df9f178]
+[a35n18:60178] [ 9] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2d828c)[0x20004df9828c]
+[a35n18:60182] [ 8] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(+0xefb5b0)[0x20007735b5b0]
+[a35n18:60180] [ 3] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow13BaseGPUDevice7ComputeEPNS_8OpKernelEPNS_15OpKernelContextE+0x120)[0x20007752fd80]
+[a35n18:60178] [10] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow6TensorC2EPNS_9AllocatorENS_8DataTypeERKNS_11TensorShapeERKNS_20AllocationAttributesE+0xdc4)[0x200077375154]
+[a35n18:60180] [ 4] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunEPNS_19ScopedStepContainerERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS7_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0xffc)[0x20004730333c]
+[a35n18:60178] [11] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_tensorENS_8DataTypeERKNS_11TensorShapeEPNS_6TensorENS_19AllocatorAttributesERKNS_20AllocationAttributesE+0xac)[0x2000773199ac]
+[a35n18:60180] [ 5] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2df178)[0x20004df9f178]
+[a35n18:60182] [ 9] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorENS_19AllocatorAttributesE+0xa98)[0x20007731a998]
+[a35n18:60180] [ 6] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS5_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0x15c)[0x2000473037cc]
+[a35n18:60178] [12] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow13BaseGPUDevice7ComputeEPNS_8OpKernelEPNS_15OpKernelContextE+0x120)[0x20007752fd80]
+[a35n18:60182] [10] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorE+0xa0)[0x20007731ab70]
+[a35n18:60180] [ 7] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow18EagerKernelExecuteEPNS_12EagerContextERKN4absl13InlinedVectorIPNS_12TensorHandleELm4ESaIS5_EEERKNS2_8optionalINS_25EagerRemoteFunctionParamsEEERKSt10unique_ptrINS_15KernelAndDeviceENS_4core15RefCountDeleterEEPNS_14GraphCollectorEPNS_19CancellationManagerENS2_4SpanIS5_EE+0x768)[0x2000472d1228]
+[a35n18:60178] [13] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunEPNS_19ScopedStepContainerERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS7_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0xffc)[0x20004730333c]
+[a35n18:60182] [11] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow11ExecuteNode3RunEv+0x7c)[0x2000472d158c]
+[a35n18:60178] [14] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2d828c)[0x20004df9828c]
+[a35n18:60180] [ 8] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS5_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0x15c)[0x2000473037cc]
+[a35n18:60182] [12] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor7RunItemESt10unique_ptrINS0_8NodeItemENS_4core15RefCountDeleterEE+0x578)[0x20004732d908]
+[a35n18:60178] [15] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow18EagerKernelExecuteEPNS_12EagerContextERKN4absl13InlinedVectorIPNS_12TensorHandleELm4ESaIS5_EEERKNS2_8optionalINS_25EagerRemoteFunctionParamsEEERKSt10unique_ptrINS_15KernelAndDeviceENS_4core15RefCountDeleterEEPNS_14GraphCollectorEPNS_19CancellationManagerENS2_4SpanIS5_EE+0x768)[0x2000472d1228]
+[a35n18:60182] [13] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor12AddOrExecuteESt10unique_ptrINS_9EagerNodeESt14default_deleteIS2_EE+0x9ec)[0x20004732e44c]
+[a35n18:60178] [16] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2df178)[0x20004df9f178]
+[a35n18:60180] [ 9] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0x360c5d8)[0x2000472cc5d8]
+[a35n18:60178] [17] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow11ExecuteNode3RunEv+0x7c)[0x2000472d158c]
+[a35n18:60182] [14] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow13BaseGPUDevice7ComputeEPNS_8OpKernelEPNS_15OpKernelContextE+0x120)[0x20007752fd80]
+[a35n18:60180] [10] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow12EagerExecuteEPNS_14EagerOperationEPPNS_12TensorHandleEPi+0x158)[0x2000472cddf8]
+[a35n18:60178] [18] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunEPNS_19ScopedStepContainerERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS7_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0xffc)[0x20004730333c]
+[a35n18:60180] [11] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor7RunItemESt10unique_ptrINS0_8NodeItemENS_4core15RefCountDeleterEE+0x578)[0x20004732d908]
+[a35n18:60182] [15] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(TFE_Execute+0xcc)[0x200047136d2c]
+[a35n18:60178] [19] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS5_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0x15c)[0x2000473037cc]
+[a35n18:60180] [12] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor12AddOrExecuteESt10unique_ptrINS_9EagerNodeESt14default_deleteIS2_EE+0x9ec)[0x20004732e44c]
+[a35n18:60182] [16] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_Z24TFE_Py_FastPathExecute_CP7_objectS0_+0x1d58)[0x200047090868]
+[a35n18:60178] [20] python(_PyCFunction_FastCallDict+0xb0)[0x1049a5480]
+[a35n18:60178] [21] python(_PyCFunction_FastCallKeywords+0x24)[0x1049f1c64]
+[a35n18:60178] [22] python(+0x1bf82c)[0x104a8f82c]
+[a35n18:60178] [23] python(_PyEval_EvalFrameDefault+0x604)[0x104aca5a4]
+[a35n18:60178] [24] python(PyEval_EvalFrameEx+0x34)[0x104982bc4]
+[a35n18:60178] [25] python(+0x1b3b28)[0x104a83b28]
+[a35n18:60178] [26] python(+0x1b5794)[0x104a85794]
+[a35n18:60178] [27] python(+0x1bf9ac)[0x104a8f9ac]
+[a35n18:60178] [28] python(_PyEval_EvalFrameDefault+0x1718)[0x104acb6b8]
+[a35n18:60178] [29] python(PyEval_EvalFrameEx+0x34)[0x104982bc4]
+[a35n18:60178] *** End of error message ***
+/sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow18EagerKernelExecuteEPNS_12EagerContextERKN4absl13InlinedVectorIPNS_12TensorHandleELm4ESaIS5_EEERKNS2_8optionalINS_25EagerRemoteFunctionParamsEEERKSt10unique_ptrINS_15KernelAndDeviceENS_4core15RefCountDeleterEEPNS_14GraphCollectorEPNS_19CancellationManagerENS2_4SpanIS5_EE+0x768)[0x2000472d1228]
+[a35n18:60180] [13] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0x360c5d8)[0x2000472cc5d8]
+[a35n18:60182] [17] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow11ExecuteNode3RunEv+0x7c)[0x2000472d158c]
+[a35n18:60180] [14] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow12EagerExecuteEPNS_14EagerOperationEPPNS_12TensorHandleEPi+0x158)[0x2000472cddf8]
+[a35n18:60182] [18] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor7RunItemESt10unique_ptrINS0_8NodeItemENS_4core15RefCountDeleterEE+0x578)[0x20004732d908]
+[a35n18:60180] [15] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(TFE_Execute+0xcc)[0x200047136d2c]
+[a35n18:60182] [19] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor12AddOrExecuteESt10unique_ptrINS_9EagerNodeESt14default_deleteIS2_EE+0x9ec)[0x20004732e44c]
+[a35n18:60180] [16] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_Z24TFE_Py_FastPathExecute_CP7_objectS0_+0x1d58)[0x200047090868]
+[a35n18:60182] [20] python(_PyCFunction_FastCallDict+0xb0)[0x105d35480]
+[a35n18:60182] [21] python(_PyCFunction_FastCallKeywords+0x24)[0x105d81c64]
+[a35n18:60182] [22] python(+0x1bf82c)[0x105e1f82c]
+[a35n18:60182] [23] python(_PyEval_EvalFrameDefault+0x604)[0x105e5a5a4]
+[a35n18:60182] [24] python(PyEval_EvalFrameEx+0x34)[0x105d12bc4]
+[a35n18:60182] [25] python(+0x1b3b28)[0x105e13b28]
+[a35n18:60182] [26] python(+0x1b5794)[0x105e15794]
+[a35n18:60182] [27] python(+0x1bf9ac)[0x105e1f9ac]
+[a35n18:60182] [28] python(_PyEval_EvalFrameDefault+0x1718)[0x105e5b6b8]
+[a35n18:60182] [29] python(PyEval_EvalFrameEx+0x34)[0x105d12bc4]
+[a35n18:60182] *** End of error message ***
+/sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0x360c5d8)[0x2000472cc5d8]
+[a35n18:60180] [17] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow12EagerExecuteEPNS_14EagerOperationEPPNS_12TensorHandleEPi+0x158)[0x2000472cddf8]
+[a35n18:60180] [18] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(TFE_Execute+0xcc)[0x200047136d2c]
+[a35n18:60180] [19] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_Z24TFE_Py_FastPathExecute_CP7_objectS0_+0x1d58)[0x200047090868]
+[a35n18:60180] [20] python(_PyCFunction_FastCallDict+0xb0)[0x106b25480]
+[a35n18:60180] [21] python(_PyCFunction_FastCallKeywords+0x24)[0x106b71c64]
+[a35n18:60180] [22] python(+0x1bf82c)[0x106c0f82c]
+[a35n18:60180] [23] python(_PyEval_EvalFrameDefault+0x604)[0x106c4a5a4]
+[a35n18:60180] [24] python(PyEval_EvalFrameEx+0x34)[0x106b02bc4]
+[a35n18:60180] [25] python(+0x1b3b28)[0x106c03b28]
+[a35n18:60180] [26] python(+0x1b5794)[0x106c05794]
+[a35n18:60180] [27] python(+0x1bf9ac)[0x106c0f9ac]
+[a35n18:60180] [28] python(_PyEval_EvalFrameDefault+0x1718)[0x106c4b6b8]
+[a35n18:60180] [29] python(PyEval_EvalFrameEx+0x34)[0x106b02bc4]
+[a35n18:60180] *** End of error message ***
+2020-05-07 12:02:54.859361: W tensorflow/core/common_runtime/bfc_allocator.cc:801] Allocator (GPU_0_bfc) ran out of memory trying to allocate 108.32GiB (rounded to 116308574208).  Current allocation summary follows.
+2020-05-07 12:02:54.859447: I tensorflow/core/common_runtime/bfc_allocator.cc:1288] BFCAllocator dump for GPU_0_bfc
+2020-05-07 12:02:54.859466: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (256): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859481: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (512): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859498: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1024): 	Total Chunks: 1, Chunks in use: 1. 1.2KiB allocated for chunks. 1.2KiB in use in bin. 1.0KiB client-requested in use in bin.
+2020-05-07 12:02:54.859511: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2048): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859524: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4096): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859537: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8192): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859549: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16384): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859563: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (32768): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859575: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (65536): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859587: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (131072): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859600: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (262144): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859613: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (524288): 	Total Chunks: 1, Chunks in use: 0. 1022.8KiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859627: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1048576): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859639: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2097152): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859651: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4194304): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859664: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8388608): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859675: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859688: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (33554432): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859700: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (67108864): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859713: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859725: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (268435456): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.859740: I tensorflow/core/common_runtime/bfc_allocator.cc:1311] Bin for 108.32GiB was 256.00MiB, Chunk State: 
+2020-05-07 12:02:54.859750: I tensorflow/core/common_runtime/bfc_allocator.cc:1324] Next region of size 1048576
+2020-05-07 12:02:54.859783: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] InUse  at 2001bf800000 of size 1280 next 1
+2020-05-07 12:02:54.859795: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] Free   at 2001bf800500 of size 1047296 next 18446744073709551615
+2020-05-07 12:02:54.859806: I tensorflow/core/common_runtime/bfc_allocator.cc:1349]      Summary of in-use Chunks by size: 
+2020-05-07 12:02:54.859822: I tensorflow/core/common_runtime/bfc_allocator.cc:1352] 1 Chunks of size 1280 totalling 1.2KiB
+2020-05-07 12:02:54.859833: I tensorflow/core/common_runtime/bfc_allocator.cc:1356] Sum Total of in-use chunks: 1.2KiB
+2020-05-07 12:02:54.859845: I tensorflow/core/common_runtime/bfc_allocator.cc:1358] total_region_allocated_bytes_: 1048576 memory_limit_: 15447192372 available bytes: 15446143796 curr_region_allocation_bytes_: 2097152
+2020-05-07 12:02:54.859871: I tensorflow/core/common_runtime/bfc_allocator.cc:1364] Stats: 
+Limit:                       15447192372
+InUse:                              1280
+MaxInUse:                         742400
+NumAllocs:                            59
+MaxAllocSize:                     147456
+BytesInactive:                         0
+BytesActive:                        1280
+PeakBytesActive:                  296948
+BytesReclaimed:                   445708
+NumSingleReclaims:                     0
+NumFullReclaims:                       1
+NumDefrags:                            0
+BytesDefragged:                        0
+
+2020-05-07 12:02:54.859889: W tensorflow/core/common_runtime/bfc_allocator.cc:806] *___________________________________________________________________________________________________
+[a35n18:60183] *** Process received signal ***
+[a35n18:60183] Signal: Segmentation fault (11)
+[a35n18:60183] Signal code:  (3)
+[a35n18:60183] Failing at address: 0x7ffff013ca1c390
+[a35n18:60183] [ 0] [0x2000000504d8]
+[a35n18:60183] [ 1] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow12BFCAllocator11OccupyChunkEPNS_17IntrusiveListHookINS_15LMSTensorBufferEEE+0x70)[0x200077677460]
+[a35n18:60183] [ 2] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(+0xefb5b0)[0x20007735b5b0]
+[a35n18:60183] [ 3] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow6TensorC2EPNS_9AllocatorENS_8DataTypeERKNS_11TensorShapeERKNS_20AllocationAttributesE+0xdc4)[0x200077375154]
+[a35n18:60183] [ 4] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_tensorENS_8DataTypeERKNS_11TensorShapeEPNS_6TensorENS_19AllocatorAttributesERKNS_20AllocationAttributesE+0xac)[0x2000773199ac]
+[a35n18:60183] [ 5] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorENS_19AllocatorAttributesE+0xa98)[0x20007731a998]
+[a35n18:60183] [ 6] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorE+0xa0)[0x20007731ab70]
+[a35n18:60183] [ 7] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2d828c)[0x20004df9828c]
+[a35n18:60183] [ 8] 2020-05-07 12:02:54.865961: W tensorflow/core/common_runtime/bfc_allocator.cc:801] Allocator (GPU_0_bfc) ran out of memory trying to allocate 108.32GiB (rounded to 116308574208).  Current allocation summary follows.
+2020-05-07 12:02:54.866018: I tensorflow/core/common_runtime/bfc_allocator.cc:1288] BFCAllocator dump for GPU_0_bfc
+2020-05-07 12:02:54.866035: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (256): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866048: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (512): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866062: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1024): 	Total Chunks: 1, Chunks in use: 1. 1.2KiB allocated for chunks. 1.2KiB in use in bin. 1.0KiB client-requested in use in bin.
+2020-05-07 12:02:54.866077: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2048): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866089: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4096): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866101: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8192): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866113: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16384): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866125: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (32768): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866136: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (65536): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866148: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (131072): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866160: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (262144): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866173: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (524288): 	Total Chunks: 1, Chunks in use: 0. 1022.8KiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866184: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1048576): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866196: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2097152): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866208: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4194304): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866219: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8388608): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866231: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866242: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (33554432): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866254: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (67108864): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866266: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866277: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (268435456): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.866290: I tensorflow/core/common_runtime/bfc_allocator.cc:1311] Bin for 108.32GiB was 256.00MiB, Chunk State: 
+2020-05-07 12:02:54.866300: I tensorflow/core/common_runtime/bfc_allocator.cc:1324] Next region of size 1048576
+2020-05-07 12:02:54.866319: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] InUse  at 2001d7c00000 of size 1280 next 1
+2020-05-07 12:02:54.866330: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] Free   at 2001d7c00500 of size 1047296 next 18446744073709551615
+2020-05-07 12:02:54.866340: I tensorflow/core/common_runtime/bfc_allocator.cc:1349]      Summary of in-use Chunks by size: 
+2020-05-07 12:02:54.866352: I tensorflow/core/common_runtime/bfc_allocator.cc:1352] 1 Chunks of size 1280 totalling 1.2KiB
+2020-05-07 12:02:54.866362: I tensorflow/core/common_runtime/bfc_allocator.cc:1356] Sum Total of in-use chunks: 1.2KiB
+2020-05-07 12:02:54.866373: I tensorflow/core/common_runtime/bfc_allocator.cc:1358] total_region_allocated_bytes_: 1048576 memory_limit_: 15447192372 available bytes: 15446143796 curr_region_allocation_bytes_: 2097152
+2020-05-07 12:02:54.866394: I tensorflow/core/common_runtime/bfc_allocator.cc:1364] Stats: 
+Limit:                       15447192372
+InUse:                              1280
+MaxInUse:                         742400
+NumAllocs:                            59
+MaxAllocSize:                     147456
+BytesInactive:                         0
+BytesActive:                        1280
+PeakBytesActive:                  296948
+BytesReclaimed:                   445708
+NumSingleReclaims:                     0
+NumFullReclaims:                       1
+NumDefrags:                            0
+BytesDefragged:                        0
+
+2020-05-07 12:02:54.866406: W tensorflow/core/common_runtime/bfc_allocator.cc:806] *___________________________________________________________________________________________________
+[a35n18:60181] *** Process received signal ***
+[a35n18:60181] Signal: Segmentation fault (11)
+[a35n18:60181] Signal code:  (3)
+[a35n18:60181] Failing at address: 0x7ffff012fea3610
+[a35n18:60181] [ 0] [0x2000000504d8]
+[a35n18:60181] [ 1] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow12BFCAllocator11OccupyChunkEPNS_17IntrusiveListHookINS_15LMSTensorBufferEEE+0x70)[0x200077677460]
+[a35n18:60181] [ 2] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2df178)[0x20004df9f178]
+[a35n18:60183] [ 9] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(+0xefb5b0)[0x20007735b5b0]
+[a35n18:60181] [ 3] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow13BaseGPUDevice7ComputeEPNS_8OpKernelEPNS_15OpKernelContextE+0x120)[0x20007752fd80]
+[a35n18:60183] [10] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow6TensorC2EPNS_9AllocatorENS_8DataTypeERKNS_11TensorShapeERKNS_20AllocationAttributesE+0xdc4)[0x200077375154]
+[a35n18:60181] [ 4] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunEPNS_19ScopedStepContainerERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS7_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0xffc)[0x20004730333c]
+[a35n18:60183] [11] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_tensorENS_8DataTypeERKNS_11TensorShapeEPNS_6TensorENS_19AllocatorAttributesERKNS_20AllocationAttributesE+0xac)[0x2000773199ac]
+[a35n18:60181] [ 5] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorENS_19AllocatorAttributesE+0xa98)[0x20007731a998]
+[a35n18:60181] [ 6] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS5_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0x15c)[0x2000473037cc]
+[a35n18:60183] [12] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorE+0xa0)[0x20007731ab70]
+[a35n18:60181] [ 7] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow18EagerKernelExecuteEPNS_12EagerContextERKN4absl13InlinedVectorIPNS_12TensorHandleELm4ESaIS5_EEERKNS2_8optionalINS_25EagerRemoteFunctionParamsEEERKSt10unique_ptrINS_15KernelAndDeviceENS_4core15RefCountDeleterEEPNS_14GraphCollectorEPNS_19CancellationManagerENS2_4SpanIS5_EE+0x768)[0x2000472d1228]
+[a35n18:60183] [13] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow11ExecuteNode3RunEv+0x7c)[0x2000472d158c]
+[a35n18:60183] [14] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2d828c)[0x20004df9828c]
+[a35n18:60181] [ 8] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor7RunItemESt10unique_ptrINS0_8NodeItemENS_4core15RefCountDeleterEE+0x578)[0x20004732d908]
+[a35n18:60183] [15] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2df178)[0x20004df9f178]
+[a35n18:60181] [ 9] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor12AddOrExecuteESt10unique_ptrINS_9EagerNodeESt14default_deleteIS2_EE+0x9ec)[0x20004732e44c]
+[a35n18:60183] [16] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow13BaseGPUDevice7ComputeEPNS_8OpKernelEPNS_15OpKernelContextE+0x120)[0x20007752fd80]
+[a35n18:60181] [10] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0x360c5d8)[0x2000472cc5d8]
+[a35n18:60183] [17] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunEPNS_19ScopedStepContainerERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS7_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0xffc)[0x20004730333c]
+[a35n18:60181] [11] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow12EagerExecuteEPNS_14EagerOperationEPPNS_12TensorHandleEPi+0x158)[0x2000472cddf8]
+[a35n18:60183] [18] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS5_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0x15c)[0x2000473037cc]
+[a35n18:60181] [12] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(TFE_Execute+0xcc)[0x200047136d2c]
+[a35n18:60183] [19] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow18EagerKernelExecuteEPNS_12EagerContextERKN4absl13InlinedVectorIPNS_12TensorHandleELm4ESaIS5_EEERKNS2_8optionalINS_25EagerRemoteFunctionParamsEEERKSt10unique_ptrINS_15KernelAndDeviceENS_4core15RefCountDeleterEEPNS_14GraphCollectorEPNS_19CancellationManagerENS2_4SpanIS5_EE+0x768)[0x2000472d1228]
+[a35n18:60181] [13] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_Z24TFE_Py_FastPathExecute_CP7_objectS0_+0x1d58)[0x200047090868]
+[a35n18:60183] [20] python(_PyCFunction_FastCallDict+0xb0)[0x100e15480]
+[a35n18:60183] [21] python(_PyCFunction_FastCallKeywords+0x24)[0x100e61c64]
+[a35n18:60183] [22] python(+0x1bf82c)[0x100eff82c]
+[a35n18:60183] [23] python(_PyEval_EvalFrameDefault+0x604)[0x100f3a5a4]
+[a35n18:60183] [24] python(PyEval_EvalFrameEx+0x34)[0x100df2bc4]
+[a35n18:60183] [25] python(+0x1b3b28)[0x100ef3b28]
+[a35n18:60183] [26] python(+0x1b5794)[0x100ef5794]
+[a35n18:60183] [27] python(+0x1bf9ac)[0x100eff9ac]
+[a35n18:60183] [28] python(_PyEval_EvalFrameDefault+0x1718)[0x100f3b6b8]
+[a35n18:60183] [29] python(PyEval_EvalFrameEx+0x34)[0x100df2bc4]
+[a35n18:60183] *** End of error message ***
+/sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow11ExecuteNode3RunEv+0x7c)[0x2000472d158c]
+[a35n18:60181] [14] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor7RunItemESt10unique_ptrINS0_8NodeItemENS_4core15RefCountDeleterEE+0x578)[0x20004732d908]
+[a35n18:60181] [15] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor12AddOrExecuteESt10unique_ptrINS_9EagerNodeESt14default_deleteIS2_EE+0x9ec)[0x20004732e44c]
+[a35n18:60181] [16] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0x360c5d8)[0x2000472cc5d8]
+[a35n18:60181] [17] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow12EagerExecuteEPNS_14EagerOperationEPPNS_12TensorHandleEPi+0x158)[0x2000472cddf8]
+[a35n18:60181] [18] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(TFE_Execute+0xcc)[0x200047136d2c]
+[a35n18:60181] [19] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_Z24TFE_Py_FastPathExecute_CP7_objectS0_+0x1d58)[0x200047090868]
+[a35n18:60181] [20] python(_PyCFunction_FastCallDict+0xb0)[0x10cd05480]
+[a35n18:60181] [21] python(_PyCFunction_FastCallKeywords+0x24)[0x10cd51c64]
+[a35n18:60181] [22] python(+0x1bf82c)[0x10cdef82c]
+[a35n18:60181] [23] python(_PyEval_EvalFrameDefault+0x604)[0x10ce2a5a4]
+[a35n18:60181] [24] python(PyEval_EvalFrameEx+0x34)[0x10cce2bc4]
+[a35n18:60181] [25] python(+0x1b3b28)[0x10cde3b28]
+[a35n18:60181] [26] python(+0x1b5794)[0x10cde5794]
+[a35n18:60181] [27] python(+0x1bf9ac)[0x10cdef9ac]
+[a35n18:60181] [28] python(_PyEval_EvalFrameDefault+0x1718)[0x10ce2b6b8]
+[a35n18:60181] [29] python(PyEval_EvalFrameEx+0x34)[0x10cce2bc4]
+[a35n18:60181] *** End of error message ***
+2020-05-07 12:02:54.908339: W tensorflow/core/common_runtime/bfc_allocator.cc:801] Allocator (GPU_0_bfc) ran out of memory trying to allocate 108.32GiB (rounded to 116308574208).  Current allocation summary follows.
+2020-05-07 12:02:54.908396: I tensorflow/core/common_runtime/bfc_allocator.cc:1288] BFCAllocator dump for GPU_0_bfc
+2020-05-07 12:02:54.908414: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (256): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908427: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (512): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908441: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1024): 	Total Chunks: 1, Chunks in use: 1. 1.2KiB allocated for chunks. 1.2KiB in use in bin. 1.0KiB client-requested in use in bin.
+2020-05-07 12:02:54.908452: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2048): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908464: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4096): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908476: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8192): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908487: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16384): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908499: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (32768): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908510: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (65536): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908522: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (131072): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908533: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (262144): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908546: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (524288): 	Total Chunks: 1, Chunks in use: 0. 1022.8KiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908557: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (1048576): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908569: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (2097152): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908581: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (4194304): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908592: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (8388608): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908603: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908614: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (33554432): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908626: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (67108864): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908637: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908648: I tensorflow/core/common_runtime/bfc_allocator.cc:1295] Bin (268435456): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-07 12:02:54.908661: I tensorflow/core/common_runtime/bfc_allocator.cc:1311] Bin for 108.32GiB was 256.00MiB, Chunk State: 
+2020-05-07 12:02:54.908671: I tensorflow/core/common_runtime/bfc_allocator.cc:1324] Next region of size 1048576
+2020-05-07 12:02:54.908694: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] InUse  at 200196200000 of size 1280 next 1
+2020-05-07 12:02:54.908705: I tensorflow/core/common_runtime/bfc_allocator.cc:1344] Free   at 200196200500 of size 1047296 next 18446744073709551615
+2020-05-07 12:02:54.908715: I tensorflow/core/common_runtime/bfc_allocator.cc:1349]      Summary of in-use Chunks by size: 
+2020-05-07 12:02:54.908727: I tensorflow/core/common_runtime/bfc_allocator.cc:1352] 1 Chunks of size 1280 totalling 1.2KiB
+2020-05-07 12:02:54.908738: I tensorflow/core/common_runtime/bfc_allocator.cc:1356] Sum Total of in-use chunks: 1.2KiB
+2020-05-07 12:02:54.908749: I tensorflow/core/common_runtime/bfc_allocator.cc:1358] total_region_allocated_bytes_: 1048576 memory_limit_: 15447192372 available bytes: 15446143796 curr_region_allocation_bytes_: 2097152
+2020-05-07 12:02:54.908766: I tensorflow/core/common_runtime/bfc_allocator.cc:1364] Stats: 
+Limit:                       15447192372
+InUse:                              1280
+MaxInUse:                         742400
+NumAllocs:                            59
+MaxAllocSize:                     147456
+BytesInactive:                         0
+BytesActive:                        1280
+PeakBytesActive:                  296948
+BytesReclaimed:                   445708
+NumSingleReclaims:                     0
+NumFullReclaims:                       1
+NumDefrags:                            0
+BytesDefragged:                        0
+
+2020-05-07 12:02:54.908780: W tensorflow/core/common_runtime/bfc_allocator.cc:806] *___________________________________________________________________________________________________
+[a35n18:60179] *** Process received signal ***
+[a35n18:60179] Signal: Segmentation fault (11)
+[a35n18:60179] Signal code:  (3)
+[a35n18:60179] Failing at address: 0x7ffff015a9f94b0
+[a35n18:60179] [ 0] [0x2000000504d8]
+[a35n18:60179] [ 1] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow12BFCAllocator11OccupyChunkEPNS_17IntrusiveListHookINS_15LMSTensorBufferEEE+0x70)[0x200077677460]
+[a35n18:60179] [ 2] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(+0xefb5b0)[0x20007735b5b0]
+[a35n18:60179] [ 3] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow6TensorC2EPNS_9AllocatorENS_8DataTypeERKNS_11TensorShapeERKNS_20AllocationAttributesE+0xdc4)[0x200077375154]
+[a35n18:60179] [ 4] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_tensorENS_8DataTypeERKNS_11TensorShapeEPNS_6TensorENS_19AllocatorAttributesERKNS_20AllocationAttributesE+0xac)[0x2000773199ac]
+[a35n18:60179] [ 5] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorENS_19AllocatorAttributesE+0xa98)[0x20007731a998]
+[a35n18:60179] [ 6] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow15OpKernelContext15allocate_outputEiRKNS_11TensorShapeEPPNS_6TensorE+0xa0)[0x20007731ab70]
+[a35n18:60179] [ 7] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2d828c)[0x20004df9828c]
+[a35n18:60179] [ 8] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0xa2df178)[0x20004df9f178]
+[a35n18:60179] [ 9] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/../libtensorflow_framework.so.2(_ZN10tensorflow13BaseGPUDevice7ComputeEPNS_8OpKernelEPNS_15OpKernelContextE+0x120)[0x20007752fd80]
+[a35n18:60179] [10] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunEPNS_19ScopedStepContainerERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS7_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0xffc)[0x20004730333c]
+[a35n18:60179] [11] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow17KernelAndDeviceOp3RunERKNS_15EagerKernelArgsEPSt6vectorINS_6TensorESaIS5_EEPNS_19CancellationManagerERKN4absl8optionalINS_25EagerRemoteFunctionParamsEEE+0x15c)[0x2000473037cc]
+[a35n18:60179] [12] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow18EagerKernelExecuteEPNS_12EagerContextERKN4absl13InlinedVectorIPNS_12TensorHandleELm4ESaIS5_EEERKNS2_8optionalINS_25EagerRemoteFunctionParamsEEERKSt10unique_ptrINS_15KernelAndDeviceENS_4core15RefCountDeleterEEPNS_14GraphCollectorEPNS_19CancellationManagerENS2_4SpanIS5_EE+0x768)[0x2000472d1228]
+[a35n18:60179] [13] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow11ExecuteNode3RunEv+0x7c)[0x2000472d158c]
+[a35n18:60179] [14] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor7RunItemESt10unique_ptrINS0_8NodeItemENS_4core15RefCountDeleterEE+0x578)[0x20004732d908]
+[a35n18:60179] [15] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow13EagerExecutor12AddOrExecuteESt10unique_ptrINS_9EagerNodeESt14default_deleteIS2_EE+0x9ec)[0x20004732e44c]
+[a35n18:60179] [16] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(+0x360c5d8)[0x2000472cc5d8]
+[a35n18:60179] [17] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow12EagerExecuteEPNS_14EagerOperationEPPNS_12TensorHandleEPi+0x158)[0x2000472cddf8]
+[a35n18:60179] [18] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(TFE_Execute+0xcc)[0x200047136d2c]
+[a35n18:60179] [19] /sw/summit/ibm-wml-ce/anaconda-base/envs/ibm-wml-ce-1.7.0-2/lib/python3.6/site-packages/tensorflow_core/python/_pywrap_tensorflow_internal.so(_Z24TFE_Py_FastPathExecute_CP7_objectS0_+0x1d58)[0x200047090868]
+[a35n18:60179] [20] python(_PyCFunction_FastCallDict+0xb0)[0x13f135480]
+[a35n18:60179] [21] python(_PyCFunction_FastCallKeywords+0x24)[0x13f181c64]
+[a35n18:60179] [22] python(+0x1bf82c)[0x13f21f82c]
+[a35n18:60179] [23] python(_PyEval_EvalFrameDefault+0x604)[0x13f25a5a4]
+[a35n18:60179] [24] python(PyEval_EvalFrameEx+0x34)[0x13f112bc4]
+[a35n18:60179] [25] python(+0x1b3b28)[0x13f213b28]
+[a35n18:60179] [26] python(+0x1b5794)[0x13f215794]
+[a35n18:60179] [27] python(+0x1bf9ac)[0x13f21f9ac]
+[a35n18:60179] [28] python(_PyEval_EvalFrameDefault+0x1718)[0x13f25b6b8]
+[a35n18:60179] [29] python(PyEval_EvalFrameEx+0x34)[0x13f112bc4]
+[a35n18:60179] *** End of error message ***
+bash: line 1: 60182 Segmentation fault      (core dumped) python cvae/train_cvae.py -f bytes-train.tfrecords
